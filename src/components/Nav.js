@@ -1,21 +1,21 @@
 import React from "react";
-import littlelemon_logo from "../images/littlelemon_logo.png"
+import littlelemon_logo from "../images/littlelemon_logo.png";
+import styles from './Nav.module.css'; // Import the CSS module
 
 const Nav = () => {
-    return(
-        <nav>
-            <img src={littlelemon_logo} alt="Little Lemon Logo" ></img>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservations</a></li>
-                <li><a>Order Online</a></li>
-                <li><a>Login</a></li>
-
-            </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className={styles.navContainer}>
+      <img src={littlelemon_logo} alt="Little Lemon Logo" className={styles.logo}></img>
+      <ul className={styles.navList}>
+        <li className={styles.navItem}><button className={styles.navButton}>Home</button></li>
+        <li className={styles.navItem}><button className={styles.navButton}>About</button></li>
+        <li className={styles.navItem}><button className={styles.navButton}>Menu</button></li>
+        <li className={styles.navItem}><button className={styles.navButton}>Reservations</button></li>
+        <li className={styles.navItem}><button className={styles.navButton}>Order Online</button></li>
+        <li className={styles.navItem}><button className={styles.navButton}>Login</button></li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Nav;

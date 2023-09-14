@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footerContainer {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footerContainer:hover {
+    background-color: #444;
+  }
+  
+  .footerSection {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footerLogo {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footerLogo:hover {
+    transform: scale(1.1);
+  }
+  
+  .footerList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footerItem {
+    margin: 0;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footerItem:hover {
+    color: #F4CE14;
+  }
+  
+  .footerTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  

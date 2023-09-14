@@ -1,3 +1,4 @@
+// Main.js
 import React, { useReducer, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Booking from "./Booking";
@@ -46,30 +47,23 @@ const Main = () => {
   };
 
   const [showBooking, setShowBooking] = useState(false);
-  const handleReserveClick = () => {
-    setShowBooking(true);
-  };
 
   return (
     <main className={styles.mainContainer}>
-    <section className={styles.contentSection}>
-      <h2 className={styles.contentTitle}>Welcome to Little Lemon Restaurant</h2>
-      <p className={styles.contentText}>
-        Experience the finest dining with a variety of cuisines to choose from.
-      </p>
-    </section>
+      <section className={styles.contentSection}>
+        <h2 className={styles.contentTitle}>Welcome to Little Lemon Restaurant</h2>
+        <p className={styles.contentText}>
+          Experience the finest dining with a variety of cuisines to choose from.
+        </p>
+      </section>
       <Routes className={styles.routeContent}>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Header setShowBooking={setShowBooking} />} />
         <Route path="/booking" element={
-          showBooking ? 
-          <div className={styles.routeContent}>
-            <Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />
-          </div> :
-          <div className={styles.centerButton}>
-            <button className={styles.reserveButton} onClick={handleReserveClick}>
-              Reserve Your Table
-            </button>
-          </div>
+          showBooking ? (
+            <div className={styles.routeContent}>
+              <Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />
+            </div>
+          ) : null // Hide the button when showBooking is true
         } />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>

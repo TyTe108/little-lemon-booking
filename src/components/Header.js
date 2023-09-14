@@ -14,7 +14,7 @@ const Header = ({ setShowBooking }) => {
         <div>
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
-          <p>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+          <p>We are a cherished Mediterranean eatery, dedicated to blending time-honored recipes with contemporary innovation.</p>
           <Link to="/booking"><button aria-label="On Click" onClick={handleReserveClick}>Reserve Table</button></Link>
         </div>
         <div>

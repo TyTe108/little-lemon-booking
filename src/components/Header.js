@@ -14,7 +14,7 @@ const Header = () => {
             <Link to="/Booking"><button aria-label="On Click">Reserve Table</button></Link>
             </div>
             <div>
-                <img src={food1} />
+            <img src={food1} alt="Delicious Mediterranean Food" />
             </div>
             </section>
         </header>

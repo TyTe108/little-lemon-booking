@@ -10,6 +10,9 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+## Live Demo
+[Click Here](https://tyler-te-lemon-booking.netlify.app)
+
 ## Overview
 
 Little Lemon Booking is a specialized web application designed to showcase the implementation of a booking system for the Little Lemon Restaurant. Created with React Components, the project serves as a demonstration of utilizing React for building dynamic and interactive web applications. It also features API calls to fetch available time slots based on the selected date, providing a real-world example of integrating APIs into a React application.
